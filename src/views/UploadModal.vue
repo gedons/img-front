@@ -71,7 +71,7 @@ export default {
       try {
         const formData = new FormData();
         formData.append('image', this.file);
-        await axios.post('https://imageview.onrender.com/api/images/upload', formData);
+        await axios.post('https://img-zcm3.onrender.com/api/images/upload', formData);
         this.$emit('uploaded');
         this.$emit('close');
       } catch (error) {

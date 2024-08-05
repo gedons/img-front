@@ -51,7 +51,7 @@ export default {
   methods: {
     async fetchImages() {
       try {
-        const response = await axios.get('https://imageview.onrender.com/api/images');
+        const response = await axios.get('https://img-zcm3.onrender.com/api/images');
         this.images = response.data;
       } catch (error) {
         console.error('Failed to fetch images:', error);
@@ -63,7 +63,7 @@ export default {
     },
     async deleteImage(id) {
       try {
-        await axios.delete(`https://imageview.onrender.com/api/images/${id}`);
+        await axios.delete(`https://img-zcm3.onrender.com/api/images/${id}`);
         this.fetchImages();
       } catch (error) {
         console.error('Failed to delete image:', error);
